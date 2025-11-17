@@ -1,6 +1,9 @@
-const second = () => {
-const cartBtn = document.querySelector('cart')
-    console.log('second');
-}
+import getData from "./getData";
 
-export default second
+const second = () => {
+  const cartBtn = document.getElementById("cart");
+
+  getData().then((data) => console.log(data));
+};
+
+export default second;
