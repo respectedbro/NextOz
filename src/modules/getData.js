@@ -1,6 +1,6 @@
-const getData = () => {
+const getData = (str) => {
   return fetch(
-    "https://nextproj-7966c-default-rtdb.firebaseio.com/goods.json"
+    `https://nextproj-7966c-default-rtdb.firebaseio.com/goods.json`
   ).then((r) => r.json());
 };
 
